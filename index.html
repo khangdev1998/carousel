@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #111111;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        img:hover {
+            opacity: 0.6;
+            transition: 0.6s;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 1200px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: 60px auto;
+        }
+
+        .item {
+            height: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .nav-icon{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: white;
+            border-radius: 50%;
+            background: #232323;
+            width: 38px;
+            line-height: 38px;
+        }
+
+        .nav-icon:hover {
+            background: #ccc;
+            transition: 0.4s;
+        }
+
+        .owl-theme .owl-nav {
+            margin: 0;
+        }
+
+        .fa-chevron-left {
+            left: -18px;
+        }
+
+        .fa-chevron-right {
+            right: -18px;
+        }
+
+        .owl-carousel {
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://static.fptplay.net/static/img/share/video/29_05_2021/ma-ca-rong-quy-toc-fpt-play-noblesse-fpt-play29-05-2021_18g44-14.jpg?w=282&mode=scale"
+                    alt="">
+            </div>
+            <div class="item">
+                <img src="https://static.fptplay.net/static/img/share/video/07_10_2019/fairy-tail-season-407-10-2019_08g26-28.jpg?w=282&mode=scale"
+                    alt="">
+            </div>
+            <div class="item">
+                <img src="https://static.fptplay.net/static/img/share/video/13_03_2019/ansatsu-kyoushitsu-assassination-classroom13-03-2019_13g58-55.jpg?w=282&mode=scale"
+                    alt="">
+            </div>
+            <div class="item">
+                <img src="https://static.fptplay.net/static/img/share/video/02_10_2018/owari-no-seraph02-10-2018_15g35-30.jpg?w=282&mode=scale"
+                    alt="">
+            </div>
+            <div class="item">
+                <img src="https://static.fptplay.net/static/img/share/video/26_09_2019/tokyo-ghoul26-09-2019_14g28-54.jpg?w=282&mode=scale"
+                    alt="">
+            </div>
+            <div class="item">
+                <img src="https://static.fptplay.net/static/img/share/video/23_01_2019/haiyore-nyaruko-san123-01-2019_11g25-36.jpg?w=282&mode=scale"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            smartSpeed: 800,
+            autoplayHoverPause: true,
+            dots: false,
+            navText: ['<i class="fas fa-chevron-left nav-icon"></i>', '<i class="fas fa-chevron-right nav-icon"></i>'],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
